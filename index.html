@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Interactiva</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="historia">
+        <p>Había una vez un valiente guerrero llamado
+            <span id="contenedor-personaje" class="droppable"></span>,
+        </p>
+        <p>que se aventuró a un reino muy lejano llamado <span id="contenedor-lugar" class="droppable"></span>,</p>
+        <p>en busca de <span id="contenedor-deseo" class="droppable"></span>.</p>
+        <div class="">
+            <div class="siguiente-historia">
+                <p id="inicio-historia"></p>
+                <p id="nudo-historia"></p>
+                <p id="fin-historia"></p>
+            </div>
+            <div>
+                <button id="reset">Reset</button>
+                <button id="random">Random</button>
+                <button id="seguir-historia">Seguir Historia</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contenedores">
+        <div class="contenedor" id="personaje">
+            <h1>Personajes</h1>
+            <div class="draggable personaje">
+                <p>Jon</p>
+            </div>
+            <div class="draggable personaje">
+                <p>Leo</p>
+            </div>
+            <div class="draggable personaje">
+                <p>Himel</p>
+            </div>
+        </div>
+        <div class="contenedor" id="lugar">
+            <h1>Lugares</h1>
+            <div class="draggable lugar">
+                <p>Murcia</p>
+            </div>
+            <div class="draggable lugar">
+                <p>bar de Strippers</p>
+            </div>
+            <div class="draggable lugar">
+                <p>la casa de tu madre</p>
+            </div>
+        </div>
+        <div class="contenedor" id="deseo">
+            <h1>Deseos</h1>
+            <div class="draggable deseo">
+                <p>felicidad</p>
+            </div>
+            <div class="draggable deseo">
+                <p>ganar una partida del LoL</p>
+            </div>
+            <div class="draggable deseo">
+                <p>mujeres</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

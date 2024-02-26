@@ -1,0 +1,24 @@
+{
+    "options":{
+            "places": [
+                "Arcadia",
+                "Eldoria",
+                "Valoria"
+            ],
+            "characters": [
+                "Sir Alistair",
+                "Lady Elara",
+                "Lord Cedric"
+            ],
+            "objects": [
+                "espada mágica",
+                "escudo ancestral",
+                "lanza sagrada"
+            ],
+            "locations": [
+                "bosque oscuro",
+                "montaña escarpada",
+                "desierto vasto"
+            ]
+        }
+}
