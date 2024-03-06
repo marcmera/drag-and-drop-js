@@ -5,6 +5,8 @@
     padding: 10px;
     background-color: #f2f2f2;
     text-align: justify;
+    display: flex;
+    gap: 20px;
 }
 
 #contenedores {
@@ -52,4 +54,8 @@
     width: 100px;
     text-align: center;
     margin-right: 10px;
+}
+
+#image {
+    display: none;
 }

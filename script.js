@@ -20,6 +20,7 @@ $(document).ready(function () {
                 $("#seguir-historia").show();
                 $("#random").show();
                 $(".draggable").draggable("enable");
+                $('#image').css('display', 'none');
             });+
             $("#random").on("click", function () {
                 let lugares = [
@@ -52,12 +53,24 @@ $(document).ready(function () {
                 let inicioHistoria = '';
                 let nudoHistoria = '';
                 let finHistoria = '';
+                let image = $("#contenedor-personaje").attr('src');
 
                 if (lugar && personaje && deseo) {
 
                     inicioHistoria = 'Al llegar a {lugar},';
                     inicioHistoria = inicioHistoria.replace('{lugar}', lugar);
                     $('#inicio-historia').text(inicioHistoria);
+
+                    if (lugar === "Murcia") {
+                        image = "./murcia.jpg";
+                    } else if (lugar === "bar de Strippers") {
+                        image = "./club.jpg";
+                    } else if (lugar === "la casa blanca") {
+                        image = "./casa.jpg";
+                    }
+
+                    $('#image').attr('src', image);
+                    $('#image').css('display', 'block');
 
                     if (deseo === "felicidad") {
                         nudoHistoria = '{personaje} encontró la felicidad descubriendo su vocación,';
